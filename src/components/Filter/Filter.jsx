@@ -1,12 +1,8 @@
-import { Component } from "react";
 import PropTypes from 'prop-types';
-export class Filter extends Component {
 
-    render() {
-        const { filter,handleFilterChange } = this.props;
+export const Filter = ({filter,handleFilterChange} )=> {
+
         return (
-        
-
           <div style={{ marginTop: 20 }}>
             <p style={{paddingBottom:'5px'}}>
                 Find contacts by name
@@ -16,9 +12,7 @@ export class Filter extends Component {
                 name='filter'
                 value={filter}
                 onChange={handleFilterChange} />  
-      </div>
-    )
-  }
+      </div> )
 }
 
 export default Filter;
